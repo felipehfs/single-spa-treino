@@ -28,6 +28,15 @@ registerApplication({
 });
 
 registerApplication({
+  name: "@teste/react-route",
+  app: () =>
+    System.import(
+      "@teste/react-route"
+    ),
+  activeWhen:  (location) => location.pathname == "/react-route",
+});
+
+registerApplication({
   name: "@teste/react-parcel",
   app: () =>
     System.import(
